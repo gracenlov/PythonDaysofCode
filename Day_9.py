@@ -1,12 +1,25 @@
-#write a program to remove duplicates from a list
+#Create a program to check if a number is even or odd
 
-def remove_duplicate(values):
-    return list(dict.fromkeys(values))
+def CheckEvenOddNum(inputNum):
+    if isinstance(inputNum,int):
+        if inputNum%2==0:
+            return True
+        
+    return False
 
+val=0
+while True:
+    try:
+        val=int(input("please enter a number: "))
+        result=CheckEvenOddNum(val)
+        if result:
+            print("The value {} is even number".format(val))
+        else:
+            print("The value {} is odd number".format(val))
+        continue
+    except ValueError:
+        break
+       
+        
 
-my_input=["a","4","b","c","c","a", "5","z","5","43","df","fd"]
-my_list=remove_duplicate(my_input)
-
-print("result with no duplicates: ",my_input)
-
-print("result with no duplicate: ",my_list)
+        
