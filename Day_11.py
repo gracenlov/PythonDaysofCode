@@ -21,6 +21,6 @@ str_arg="This is my String"
 print("string value is " + str_arg)
 print("string reversed is " + reverse_string(str_arg))
 
-str_arg="Jesus loves you"
+str_arg="Jesus loves me"
 print("string value is " + str_arg)
 print("string reversed is " + reverse_string_recursion(str_arg))
