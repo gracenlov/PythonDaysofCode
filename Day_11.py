@@ -1,26 +1,24 @@
-#write a program to reverse a given string
+#write a program to print the multiplication table of a given number
 
-def reverse_string(string_input):
-    i=len(string_input)-1
-    string_reversed = ""
-    while i>0:
-     string_reversed = string_reversed + string_input[i]
-     i-=1
-     if(i==0):
-        string_reversed = string_reversed + string_input[0]
-    return string_reversed
+def get_multiplication_table(number):
+    mult_table=[]
+    if isinstance(number, int) | isinstance(number,float):
+        i=1
+        while i<=10:
+            mult_table.append(number*(i))
+            i+=1
+    print( mult_table)
+    return mult_table
 
-def reverse_string_recursion(s):
-    if len(s) == 0:
-        return s
-    else:
-        return reverse_string_recursion(s[1:]) + s[0]
-    
+number_arg = int(input("Enter a number:"))
+mult_table_result=get_multiplication_table(number_arg)
 
-str_arg="This is my String"
-print("string value is " + str_arg)
-print("string reversed is " + reverse_string(str_arg))
+i=0
+while i<len(mult_table_result):
+    print("{0} x {1} = {2}".format(number_arg,i+1,mult_table_result[i]))
+    i+=1
 
-str_arg="Jesus loves me"
-print("string value is " + str_arg)
-print("string reversed is " + reverse_string_recursion(str_arg))
+
+
+
+ 
