@@ -1,12 +1,9 @@
 #create a program that checks if a given string is a valid email address
 
 import re
- 
-regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
- 
 
 def checkEmailFormat(emailAddress):
- 
+    regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
     if(re.fullmatch(regex, emailAddress)):
         print("Valid Email")
  
