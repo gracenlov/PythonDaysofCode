@@ -10,8 +10,8 @@ class test_sum(unittest.TestCase):
         self.assertEquals(add_2_numbers(2,0),2)
         self.assertEquals(add_2_numbers(2,-10),-8)
         self.assertNotEquals(add_2_numbers(12,13),5)
-        self.assertEquals(add_2_numbers(12,13),26)
+        self.assertEquals(add_2_numbers(12,13),25)
 
 #driver code
-if __name__=="main":
+if __name__=="__main__":
     unittest.main()
