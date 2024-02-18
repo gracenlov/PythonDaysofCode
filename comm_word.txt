@@ -1,0 +1,3 @@
+Hi, This is my testing file for the common WORD program.  This is this, and is this
+The program will find the common word; if the text file is empty, it will return 0.  Does
+that make sense, total making sense I think.  I'm tired of typing for this TESTING file.
